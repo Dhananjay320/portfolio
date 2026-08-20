@@ -3,44 +3,35 @@ import Reveal from './Reveal.jsx'
 
 export default function Experience() {
   return (
-    <section className="section" id="experience">
-      <div className="container">
-        <Reveal>
-          <p className="section-kicker">Career</p>
-          <h2 className="section-title">Work Experience</h2>
-        </Reveal>
-        <div className="timeline">
-          {experience.map((job, i) => (
-            <Reveal key={job.company} delay={i * 60}>
-              <div className="timeline-item">
-                <div className="timeline-marker" aria-hidden="true" />
-                <div className="timeline-card">
-                  <div className="timeline-head">
-                    <div>
-                      <h3>{job.role}</h3>
-                      <p className="timeline-company">{job.company}</p>
-                    </div>
-                    <div className="timeline-meta">
-                      <span className="timeline-period">{job.period}</span>
-                      <span className="timeline-location">{job.location}</span>
-                    </div>
-                  </div>
-                  <ul className="timeline-points">
-                    {job.points.map((p, j) => (
-                      <li key={j}>{p}</li>
-                    ))}
-                  </ul>
-                  <div className="project-tags">
-                    {job.tags.map((t) => (
-                      <span className="tag" key={t}>{t}</span>
-                    ))}
-                  </div>
+    <section id="experience" className="section exp-section">
+      <h2>Experience</h2>
+      {experience.map((e) => (
+        <Reveal className="exp-item" key={e.company}>
+          <div>
+            <div className="exp-period">{e.period}</div>
+            <div className="exp-company">{e.company}</div>
+            <div className="exp-location">{e.location}</div>
+          </div>
+          <div className="exp-body">
+            <h3>{e.role}</h3>
+            <div className="exp-points">
+              {e.points.map((pt) => (
+                <div className="exp-point" key={pt}>
+                  <span className="exp-bullet">·</span>
+                  <span>{pt}</span>
                 </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </div>
+              ))}
+            </div>
+            <div className="tag-row">
+              {e.tags.map((t) => (
+                <span className="pill" key={t}>
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+      ))}
     </section>
   )
 }

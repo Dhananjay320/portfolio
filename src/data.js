@@ -15,7 +15,7 @@ export const profile = {
   links: {
     github: 'https://github.com/Dhananjay320',
     linkedin: 'https://www.linkedin.com/in/dhananjay-ahlawat-6980422b3',
-    playstore: 'https://play.google.com/store/search?q=AdwinGuru&c=apps',
+    playstore: 'https://play.google.com/store/apps/details?id=com.dhananjayahlawat.myreactproject&pcampaignid=web_share',
   },
   stats: [
     { value: '2+', label: 'Years of Experience' },
@@ -85,6 +85,8 @@ export const experience = [
 
 export const projects = [
   {
+    key: 'niyoq',
+    shot: '/shots/niyoq.webp',
     title: 'Niyoq',
     subtitle: 'Workspace Management Platform',
     featured: true,
@@ -102,6 +104,8 @@ export const projects = [
     link: null,
   },
   {
+    key: 'erp',
+    shot: '/shots/erp.webp',
     title: 'Task Management ERP',
     subtitle: 'Factory Workforce Management',
     featured: true,
@@ -119,6 +123,8 @@ export const projects = [
     link: null,
   },
   {
+    key: 'niyukti',
+    shot: '/shots/niyukti.webp',
     title: 'Niyukti',
     subtitle: 'AI Interview Platform — HR Assistant',
     featured: true,
@@ -136,6 +142,9 @@ export const projects = [
     link: null,
   },
   {
+    key: 'tracker',
+    shot: '/shots/tracker.webp',
+    shotPortrait: true,
     title: 'Background Location Tracker',
     subtitle: 'Field-Force Tracking System',
     featured: false,
@@ -152,6 +161,9 @@ export const projects = [
     link: 'https://github.com/Dhananjay320/backgroundlocationtracker',
   },
   {
+    key: 'luxury',
+    shot: '/shots/luxury.webp',
+    shotPortrait: true,
     title: 'Luxury E-Commerce App',
     subtitle: 'Premium Shopping Experience',
     featured: false,
@@ -168,6 +180,9 @@ export const projects = [
     link: null,
   },
   {
+    key: 'adwin',
+    shot: '/shots/adwin.webp',
+    shotPortrait: true,
     title: 'Adwin & Adwin Sales',
     subtitle: 'Production Play Store Apps',
     featured: false,
@@ -181,7 +196,7 @@ export const projects = [
     tags: ['React Native', 'Play Store', 'Background Services'],
     platforms: 'Android',
     status: 'Live on Play Store',
-    link: 'https://play.google.com/store/search?q=AdwinGuru&c=apps',
+    link: 'https://play.google.com/store/apps/details?id=com.dhananjayahlawat.myreactproject&pcampaignid=web_share',
   },
 ]
 
