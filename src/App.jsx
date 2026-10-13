@@ -109,8 +109,9 @@ export default function App() {
     <><span className="acc">export const</span> {first} = {'{'}</>,
     <>  role: <span className="str">"{profile.role}"</span>,</>,
     <>  location: <span className="str">"{profile.location} · UTC+5:30"</span>,</>,
-    <>  stack: [<span className="str">"react"</span>, <span className="str">"react-native"</span>, <span className="str">"node"</span>, <span className="str">"mongodb"</span>],</>,
-    <>  focus: [<span className="str">"real-time"</span>, <span className="str">"offline-first"</span>, <span className="str">"cross-platform"</span>],</>,
+    <>  stack: [<span className="str">"react"</span>, <span className="str">"react-native"</span>, <span className="str">"node"</span>],</>,
+    <>  db: <span className="str">"mongodb"</span>,</>,
+    <>  focus: [<span className="str">"real-time"</span>, <span className="str">"offline-first"</span>],</>,
     <>  shipping: <span className="acc">true</span>,</>,
     <>{'}'} <span className="acc">satisfies</span> Engineer;</>,
   ]
@@ -120,8 +121,8 @@ export default function App() {
       <div ref={rootRef} className="page">
         <div ref={progressRef} className="progress" />
         <div ref={spotRef} className="spot" />
-        <div className="wrap">
-          <header className="topbar mono">
+        <header className="topbar mono">
+          <div className="wrap topbar-inner">
             <a href="#top" className="brand">
               <span className="acc">~/</span>
               <span>{handle}</span>
@@ -138,8 +139,10 @@ export default function App() {
                 {mode}
               </button>
             </div>
-          </header>
+          </div>
+        </header>
 
+        <div className="wrap">
           <section id="top" className="hero">
             <div className="hero-copy">
               <div data-reveal className="status mono">
@@ -147,7 +150,7 @@ export default function App() {
                 open to full-stack / react roles — {profile.location}
               </div>
               <h1 data-reveal>
-                I build cross-platform apps and the <span className="acc">real-time</span> systems behind them.
+                I build cross‑platform apps and the <span className="acc">real‑time</span> systems behind them.
               </h1>
               <p data-reveal className="lede">
                 Full-stack &amp; application developer, ~2 years in production. I work across React, React Native,
