@@ -16,6 +16,7 @@ export const profile = {
     github: 'https://github.com/Dhananjay320',
     linkedin: 'https://www.linkedin.com/in/dhananjay-ahlawat-6980422b3',
     playstore: 'https://play.google.com/store/apps/details?id=com.dhananjayahlawat.myreactproject&pcampaignid=web_share',
+    resume: 'https://drive.google.com/file/d/1gZJ6BQDlaTkRMn6nimCA9BpFjXoX7YAo/view?usp=sharing',
   },
   stats: [
     { value: '2+', label: 'Years of Experience' },
@@ -48,6 +49,7 @@ export const experience = [
   {
     role: 'Application Developer',
     company: 'Avadeti Media',
+    note: 'Lead developer of Niyoq — real-time chat, docs, geofenced attendance and payroll across web, desktop and mobile. Also architected a Task Management ERP with RBAC and audit trails.',
     period: 'March 2026 – Present',
     location: 'Gurugram, India',
     points: [
@@ -60,6 +62,7 @@ export const experience = [
   {
     role: 'React Native Developer',
     company: 'Eminent Infosystems Pvt. Ltd.',
+    note: 'Built and shipped the Adwin and Adwin Sales apps to the Play Store, including admin-controlled background location tracking with offline-first sync.',
     period: 'January 2025 – February 2026',
     location: 'Najafgarh, India',
     points: [
@@ -72,6 +75,7 @@ export const experience = [
   {
     role: 'Software Engineer Intern',
     company: 'BrackettUp HealthTech Pvt. Ltd.',
+    note: 'Worked on BrackettUp, an event booking app for fitness activities, and Nexo, its vendor-facing app for creating and managing events.',
     period: 'October 2024 – December 2024',
     location: 'India',
     points: [
